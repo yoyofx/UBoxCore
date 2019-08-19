@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PhoneBox Web SDK by zhanglei</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <script type="text/javascript" src="swfobject.js"></script>
+    <script type="text/javascript" src="web_socket.js"></script>
+
+    <script language="javascript" type="text/javascript" src="jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="bluebird.min.js"></script>
+
+    <script language="javascript" type="text/javascript" src="asyncapi.js"></script>
+    <script language="javascript" type="text/javascript" src="ubox.js"></script>
+
+    <script language="javascript" type="text/javascript" src="index.js"></script>
+
+</head>
+<body>
+    <p>
+        请在开发者工具Console中查看结果:
+    </p>
+    <p>
+        <textarea id="StatusArea" rows="13" name="S1" cols="86"></textarea>
+    </p>
+    <p>
+        <input type="button" value="连接" name="B10" onclick="ubox.connectServer()">
+        <input type="button" value="打开设备" name="B7" onclick="openDev()">
+        <input type="button" value="关闭设备" name="B7" onclick="closeDev()">
+        <input type="button" value="测试网速" name="B7" onclick="getNetworkSpeed()">
+        <input type="button" value="系统信息" name="B7" onclick="getSystemInfo()">
+    </p>
+    <p>
+        <input type="button" value="获取话柄状态" name="B7" onclick="getHookStatus()">
+        <input type="button" value="获取录音状态" name="B7" onclick="getRecordStatus()">
+        <input type="button" value="获取设备状态" name="B7" onclick="getDeviceStatus()">
+    </p>
+    <form>
+        <p>
+            <input type="text" value="" name="T1" size="20" id="dialcode">
+            <input type="button" value="拨号" name="B10" onclick="callPhone(dialcode.value)">
+        </p>
+    </form>
+    <p>
+        <input type="button" value="开始录音" name="B7" onclick="startRecordVoice()">
+        <input type="button" value="停止录音" name="B8" onclick="stopRecordVoice()">
+        <input type="button" value="上传文件" name="B7" onclick="upfile()">
+    </p>
+
+    <p>
+        <input type="button" value="开始量线路电压" name="B7" onclick="startReadLineVoltage()">
+        <input type="button" value="停止量线路电压" name="B8" onclick="stopReadLineVoltage()">
+    </p>
+    <p>
+        <input type="button" value="获取状态(异步)" name="B7" onclick="ubox.getStatusAsync()">
+        <input type="button" value="测试自定义函数" name="B7" onclick="getCustomFunc()">
+    </p>
+
+    <p>
+        <input type="button" value="获取D盘目录" name="B7" onclick="getDirectories()">
+        <input type="button" value="获取D盘文件" name="B7" onclick="getDirFilesAsync()">
+        <input type="button" value="获取D盘空间" name="B7" onclick="getHardDiskSpaceAsync()">
+        <input type="button" value="打开进程" name="B7" onclick="shellRun()">
+        <input type="button" value="打开文件对话框" name="B7" onclick="openFileDialog()">
+        <input type="button" value="保存文件对话框" name="B7" onclick="saveFileDialog()">
+    </p>
+
+    <p>
+        <input type="text" value="" name="T2" size="20" id="threshold">
+        <input type="button" value="设置电压" name="B10" onclick="setHookoffThresholdAsync(threshold.value)">
+    </p>
+
+    <p>
+        <input type="button" value="下载文件" name="B7" onclick="downloadFile()"> 
+        <div id="downloadDiv"></div>
+          
+    </p>
+
+    <p>
+        <input type="button" value="写入本地文件" name="B7" onclick="createDirAndWriteFile()"> 
+        <input type="button" value="读取本地文件" name="B7" onclick="readFile()"> 
+        <input type="button" value="读取本地文件" name="B7" onclick="readFile()"> 
+     </p>
+  
+
+</body>
+</html>

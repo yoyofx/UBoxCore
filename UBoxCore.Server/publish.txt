@@ -1,0 +1,5 @@
+dotnet publish -r win7-x86 -f netcoreapp2.1 -c release --self-contained
+
+
+
+dotnet-warp -r win-x86

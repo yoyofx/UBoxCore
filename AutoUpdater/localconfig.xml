@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AutoUpdater>
+  <UpdateInfo>
+    <!--更新时间-->
+    <UpdateTime Date = "2019-07-22"/> 
+    <!--版本号-->
+    <Version Num = "1.0.0.0"/> 
+	  <!--服务器含有版本信息的更新配置文件-->
+    <UpdateConfig Url = "http://image.bitautoimg.com/cardealer/chexian/phonebox/updateconfig.xml"/>
+	  <!--应用程序路径-->
+	  <AppPath Name = "MRecorder.exe"/>
+	  <!--重试次数-->
+	  <ReTry Times = "3"/>
+    <!--定时更新选项-->
+    <Quartz StartNow = "true" Cron="0 0 23 * * ?"/>
+  </UpdateInfo>
+</AutoUpdater>
+

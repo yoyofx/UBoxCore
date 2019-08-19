@@ -1,0 +1,25 @@
+﻿<AutoUpdater>
+<!--升级文件所在服务器端的网址-->
+  <URLAddress URL="http://autoupdate.yichehuoban.cn/update/files"/>
+  <UpdateInfo>
+    <!--更新时间-->
+    <UpdateTime Date = "2019-07-23"/> 
+    <!--版本号-->
+    <Version Num = "1.0.0.1"/>
+    <!--是否强制更新-->
+    <UpdateYes Value = "false" Msg ="盒子有新更新，是否要下载更新"/>
+  </UpdateInfo>
+  <UpdateFileList>
+    <!--升级文件列表-->
+    <File FileName = "111.txt"/>
+  </UpdateFileList>
+  <DeleteFileList>
+  <!--要删除的文件列表-->
+  </DeleteFileList>
+  <RestartApp>
+    <!--允许重新启动-->
+    <ReStart Allow = "true"/>
+    <!--启动的应用程序名-->
+    <AppName Name = "DemoFormsApp.exe"/>
+  </RestartApp>
+</AutoUpdater>
