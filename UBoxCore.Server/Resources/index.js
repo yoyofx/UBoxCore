@@ -112,7 +112,7 @@ function stopReadLineVoltage() {
 
 
 function upfile() {
-    uboxApi.postfileAsync('http://chexian.yichehuoban.cn/gateway/boxapi/callrecords/upload',
+    uboxApi.postfileAsync('http://chexian.ubox.cn/gateway/boxapi/callrecords/upload',
         'd:\\mp3\\588.mp3', '462', '50002218')
         .then(function(rs)  {
             console.log(rs);
