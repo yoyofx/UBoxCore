@@ -29,7 +29,7 @@ namespace UBoxCore.Server.RPC.RPCServices
             //设置超时时间
             int timeout = 1000;
             //调用同步 send 方法发送数据,将返回结果保存至PingReply实例
-            PingReply reply = pingSender.Send("chexian.yichehuoban.cn", timeout, buffer, options);
+            PingReply reply = pingSender.Send("chexian.ubox.cn", timeout, buffer, options);
             if(reply.Status == IPStatus.Success)
             {
              
