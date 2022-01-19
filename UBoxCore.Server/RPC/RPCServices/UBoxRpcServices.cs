@@ -22,7 +22,7 @@ namespace UBoxCore.Server.RPC.RPCServices
             };
             try
             {
-                string res = HttpHelper.Upfile("http://chexian.yichehuoban.cn/gateway/boxapi/callrecords/upload", "d:\\mp3\\588.mp3", dic);
+                string res = HttpHelper.Upfile("http://chexian.ubox.cn/gateway/boxapi/callrecords/upload", "d:\\mp3\\588.mp3", dic);
 
                 dynamic ret = JsonConvert.DeserializeObject(res);
 
