@@ -31,7 +31,7 @@ ubox.OnDownloadComplated = function () {
     console.log("download complated");
 };
 ubox.OnDownloadProgressChanged = function (e) {
-
+ 
     $('#downloadDiv').text("进度:" + e.Percentage + "%, 网络速度:" + e.Speed);
 
     //console.log(e)
