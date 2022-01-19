@@ -30,7 +30,7 @@ namespace Tests
             //    {"dealerId", "50002218" }
             //};
 
-            string res = HttpHelper.Upfile("http://chexian.yichehuoban.cn/gateway/boxapi/callrecords/upload", "d:\\mp3\\588.mp3",dic);
+            string res = HttpHelper.Upfile("http://chexian.ubox.cn/gateway/boxapi/callrecords/upload", "d:\\mp3\\588.mp3",dic);
             dynamic ret = JsonConvert.DeserializeObject(res);
 
 
