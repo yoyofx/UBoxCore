@@ -1,6 +1,6 @@
 ﻿<AutoUpdater>
 <!--升级文件所在服务器端的网址-->
-  <URLAddress URL="http://autoupdate.yichehuoban.cn/update/files"/>
+  <URLAddress URL="http://autoupdate.ubox.cn/update/files"/>
   <UpdateInfo>
     <!--更新时间-->
     <UpdateTime Date = "2019-07-23"/> 
